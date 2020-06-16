@@ -341,7 +341,3 @@ class TrainModel:
             print("please use model name RF for random forest or LR for logistic regression")
             return
 
-# Prepare data
-# Balance data
-# Train model
-# Test model
