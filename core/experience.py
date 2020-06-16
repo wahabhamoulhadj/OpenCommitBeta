@@ -454,7 +454,7 @@ def get_experience_features(graph_authors):
             rexp = graph_authors[author][commit.hex]['rexp']
             sexp = graph_authors[author][commit.hex]['sexp']
         else:
-            exp = 0
+            exp = 1
             rexp = 0
             sexp = 0
 
@@ -551,9 +551,9 @@ def save_experience_features(history_features, path):
 
 def get_part2_features():
     if by_tag:
-        branch = "refs/tags/" + repository_branch  # "refs/heads/trunk"#ARGS.branch
+        branch = "refs/tags/" + repository_branch
     else:
-        branch = "refs/heads/" + repository_branch  # "refs/heads/trunk"#ARGS.branch
+        branch = "refs/heads/" + repository_branch
     graph_path_authors = "./results/" + project_name + "/authors/author_graph_" + project_name  # +".json"
     graph_path_files = "./results/" + project_name + "/files/files_graph_" + project_name  # +".json"
 

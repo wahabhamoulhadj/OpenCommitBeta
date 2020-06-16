@@ -11,9 +11,9 @@ issue_tracking_system_url = "issues.apache.org/jira"
 
 # This variable is used to set software name
 # project_name = "kafka"
-project_name = "STORM"
+project_name = "helix"
 # This variable is used to set software repository location in your hard drive
-repository_path_location = "E:/CeleverDataset/storm"  # "E:/CeleverDataset/androidannotations"
+repository_path_location = "D:/helix"  # "E:/CeleverDataset/androidannotations"
 
 # The location for issue reports
 bugs_report_path = "./issues/"
@@ -26,9 +26,9 @@ szz_results = "./results/"
 bug_pattern = "[a-z]+[-\t]+[0-9]+"
 
 # This variable is used to set software repository branch
-repository_branch = "v1.9.2"
+repository_branch = "master"
 # This flag used to retrieve commits of specific release(False will return all commits of branch)
-by_tag = True
+by_tag = False
 
 # Generalk settings
 enable_parallel = True

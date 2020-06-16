@@ -7,10 +7,9 @@ __copyright__ = "Copyright (c) 2019 Wahab Hamou-Lhadj and Mohammed Shehab"
 
 import os
 
-from core.code_similarity import worker as block_builder
 from core.config import *
 from core.extract_features import extract_features
-from core.machine_learning import TrainModel as model
+from core.machine_learning import train_model
 from downloader.loader import jira_connection
 from szz.core import init_szz, run_szz, link_commits_with_report
 
@@ -56,21 +55,11 @@ def main():
     print("Extract features for ML and labeled datea using SZZ")
     extract_features()
 
-    if enable_nicad:
-        # Step 4: Build databse of defect-introducing commits for nicad tool process
-        print("Build database of defect-introducing commits")
-        database = szz_results + project_name + '/buggy_commits_db/'
-        if not os.path.exists(database):
-            # Build the database of defect-introducing commits from the training data.
-            # The training data size is 70% from the total data.
-            block_builder(szz_results + project_name + '_sample_features.csv', test_size=0.30)
-
-    # Step 5: Train and test the Random Forest model and NICAD
-    ml_worker = model()
-    ml_worker.train_model(dataset_path=szz_results + project_name + '_sample_features.csv',
-                          model_name='rf',
-                          data_method='down',
-                          test_size=0.30)
+    # Step 4: Train and test the Random Forest model
+    train_model(dataset_path=szz_results + project_name + '_sample_features.csv',
+                model_name='rf',
+                data_method='down',
+                test_size=0.30)
 
 
 def check_configuration():
