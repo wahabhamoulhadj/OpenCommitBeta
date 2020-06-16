@@ -1,0 +1,45 @@
+OpenCommit in simple steps:
+--------------------------
+
+# Step 1: Download the Github repository
+# Step 2: Download issue reports from Jira if not already downloaded
+# Step 3: Execute SZZ
+# Step 4: Extract the features for ML and labeled data using SZZ
+# Step 5: Train and test the Random Forest model
+# Step 6: Apply clone detection using NICAD
+# Step 7: Make recommendations
+
+Installing Nicad5 on Windows 10
+-------------------------------
+Step 1: Install Linux as a subsystem for Windows 10
+
+    - Be sure that you enable Linux as a subsystem on your Windows machine. Refer to link: https://www.windowscentral.com/how-install-linux-distros-windows-10
+    - To install Linux distribution without using Windows Store, see: https://docs.microsoft.com/en-us/windows/wsl/install-manual
+
+Step 2: Install TXL programming language
+
+    - Open the link: https://www.txl.ca/txl-download.html
+    - Select Linux x86 (64 bit) for Ubuntu, Debian, Fedora, Red Hat, CentOS, Mageia GCC 4.8 or later
+    - Agree and download the file
+    - Extract the tar file and move it to the C: drive
+    - Run Ubuntu subsystem that you installed in Step 1
+    - Use "cd /mnt/c" to go to the C: drive of your Windows 10
+    - Go to the extracted folder of TXL
+    - Run the command with administrator privilege, e.g., "sudo ./install"
+    - Follow the installation steps
+    - TXL is successfully installed if the message 'install TXL' appears
+    
+Step 3: Install Nicad5
+    
+    - Go to the commit assistant project
+    - Copy and paste the Nicad5 folder to the C: drive
+    - Use the Ubuntu subsystem to access the folder
+    - Edit the command scripts "nicad5" and "nicad5cross" in this 
+         directory to specify the directory where you installed Nicad.  
+		 For example, if you put Nicad in
+         /usr/local/lib/nicad5, you would modify the scripts to say:
+
+              LIB=/usr/local/lib/nicad5
+    - Run the command "sudo mkdir /usr/local/lib/nicad5"
+    - Run the command "sudo cp -r . /usr/local/lib/nicad5"
+    - Test Nicad5 by running the command "nicad5 blocks java /mnt/c/nicad5/systems/JHotDraw54b1 type3-2c-report"

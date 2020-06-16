@@ -1,0 +1,27 @@
+OpenCommit - Experimental environment for predicting buggy commits using machine learning
+Version 1.0 (01 December 2019)
+
+Copyright (c) 2019, Wahab Hamou-Lhadj & Mohammed Shehab
+                    ECE, Concordia University
+                    Montreal, QC, Canada
+
+OpenCommit is provided FREE OF CHARGE for the USE of individuals, companies 
+and institutions PROVIDED that proper ACKNOWLEDGEMENT OF USE of OpenCommit
+is made in all published work deriving from or depending upon such use.
+
+OpenCommit is provided on an AS-IS BASIS WITHOUT ANY WARRANTY, including WITHOUT ANY IMPLIED WARRANTY AS TO 
+ITS MERCHANTABILITY OR SUITABILITY FOR ANY PARTICULAR PURPOSE.
+
+IN NO EVENT SHALL the Copyright Holder OR the Authors BE HELD LIABLE for 
+any direct, indirect, incidental, special, exemplary, or consequential 
+damages (INCLUDING, BUT NOT LIMITED TO, procurement of substitute goods 
+or services; loss of use, data or profits; or business interruption) 
+HOWEVER CAUSED in on any theory of liability, whether in contract, 
+strict liability, or tort (INCLUDING negligence or otherwise) arising 
+IN ANY WAY out of the use of this software, EVEN IF ADVISED of the 
+possibility of such damage.
+
+Permission to copy and redistribute OpenCommit is hereby granted PROVIDED that 
+the OpenCommit distribution is RETAINED UNMODIFIED IN ITS ENTIRETY including 
+this file, and that NO CHARGE OF ANY KIND is made for such redistribution.
+
