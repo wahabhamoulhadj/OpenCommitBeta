@@ -1,4 +1,4 @@
-<b>Replication Package</b>
+## Replication Package
 
 This repository contains the datasets, results, and scripts used for the paper "Just-in-Time Software Defect Prediction Using Clusters of Projects," submitted for publication to the Journal of Systems and Software.
 
